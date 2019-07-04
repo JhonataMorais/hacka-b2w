@@ -1,0 +1,16 @@
+.j-mosaico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+
+    .box-banner {
+        margin: 5px 0;
+        width: 49%;
+
+        a, img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

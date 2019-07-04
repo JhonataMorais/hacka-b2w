@@ -1,0 +1,41 @@
+@import './tools/_breakpoint.scss';
+@import './layouts/globals/variables.scss';
+@import './layouts/geral/header/index.scss';
+@import './layouts/geral/footer/index.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+ul, ol {
+	margin-left: 0;
+	list-style: none;
+}
+
+a {
+	color: $color-main;
+	text-decoration: none;
+}
+
+body {
+	font-family: $font-main;
+	color: $color-main;
+	background: #fff;
+	font-size: 14px;
+}
+
+.container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	max-width: 90vw;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}	
