@@ -1,4 +1,4 @@
-import Geral from './modules/geral';
+import Geral from './modules/geral/index';
 
 const Methods = {
     init() {

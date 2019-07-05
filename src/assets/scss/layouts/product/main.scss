@@ -1,0 +1,39 @@
+.product-content {
+    .product-title {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .product-middle {
+        margin-bottom: 20px;
+        img {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .product-bottom {
+        .product-price {
+            font-size: 20px;
+            display: block;
+            color: green;
+        }
+        .product-installments {
+            display: block;
+        }
+        .buy-button {
+            background-color: green;
+            color: #fff;
+            font-size: 20px;
+            width: 75%;
+            padding: 7.5px;
+            box-shadow: 0 0 5px #ccc;
+            text-align: center;
+            display: block;
+            margin: 10px auto;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+    }
+}

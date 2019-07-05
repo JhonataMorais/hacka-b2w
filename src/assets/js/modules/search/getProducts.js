@@ -17,7 +17,7 @@ const Methods = {
 
                     fetch(`https://restql-server-api-v2-americanas.b2w.io/run-query/catalogo/product-without-promotion/12?id=${id}`).then( res => {
                         return res.json().then(function(infoProduct) {
-                        console.log(infoProduct);
+                            
                             let installments;
                             
                             try {
@@ -30,8 +30,9 @@ const Methods = {
                             let price; 
 
                             try {
-                                price = `${infoProduct.installment.result[0].total}`;
+                                price = `R$ ${infoProduct.installment.result[0].total.replace('.',',')}`;
                             } catch(err) {
+                                console.log(err);
                                 price = '';
                             }
 
@@ -44,10 +45,10 @@ const Methods = {
                                         <h2 class="product-name">
                                             ${name}
                                         </h2>
-                                        <strong class="product-price">R$ ${price.replace('.',',')}</strong>
+                                        <strong class="product-price">${price}</strong>
                                         <small class="product-installments">${installments}</small>
 
-                                        <a href="#" class="buy-button">Comprar</a>
+                                        <a href="/product?id=${id}" class="buy-button">Comprar</a>
                                     </div>
                                 </li>
                             `;

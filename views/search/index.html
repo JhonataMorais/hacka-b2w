@@ -11,9 +11,11 @@
 <body>
     <header class='header'>
         <div class="container">
-            <h2 class="header-logo">
-                americanas.com
-            </h2>
+            <a href="/">
+                <h2 class="header-logo">
+                    americanas.com
+                </h2>
+            </a>
 
             <div class="header-account">
                 <div class="header-icon-drop">
@@ -27,10 +29,12 @@
             </div>
 
             <div class="header-search">
-                <input type="text" class='header-search-ipt' name="inpur-search" id="input-search" placeholder="tem tuudo, pode procurar :D" />
-                <div class="search-submit">
-                        <input type="submit" class='header-search-ipt-submit' name="inpur-submit" id="input-submit" placeholder="Buscar" />
-                </div>                
+                <form id="form-search">
+                    <input type="text" class='header-search-ipt' name="inpur-search" id="input-search" placeholder="tem tuudo, pode procurar :D" />
+                    <div class="search-submit">
+                            <input type="submit" class='header-search-ipt-submit' name="inpur-submit" id="input-submit" placeholder="Buscar" />
+                    </div>
+                </form>
             </div>
         </div>
     </header>
@@ -80,6 +84,7 @@
         </div>
     </footer>
 
+    <script src="/dist/assets/js/hacka-geral.js"></script>
     <script src="../../dist/assets/js/hacka-search.js"></script>
 </body>
 </html>

@@ -57,13 +57,16 @@ header .container {
             font-size: 0;
             background: #e80011;
             cursor: pointer;
-            background-image: url('./../../../src/assets/img/search.svg');
+            background-image: url('/assets/img/search.svg');
             background-position: center center;
             background-size: 24px 24px;
             background-repeat: no-repeat;
 
             input {
-                display: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
             }
         }
     }
