@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 70%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
     
-</body>
+    <script>
+
+    // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: -23.608550, lng: -46.626380}
+        });
+
+        var markers = [
+            {
+            "title": 'Locker 1',
+            "lat": -23.622390,
+            "lng": -46.626380,
+            "description": 'Locker 1'
+            },
+            {
+            "title": 'Locker 2',
+            "lat": -23.620840,
+            "lng": -46.627090,
+            "description": 'Locker 2'
+            }, {
+            "title": 'Lojas Americanas',
+            "lat": -23.613190,
+            "lng": -46.671290,
+            "description": 'Lojas Americanas'
+            }, {
+            "title": 'Lojas Americanas 2',
+            "lat": -23.608550,
+            "lng": -46.662270,
+            "description": 'Lojas Americanas 2'
+            }, {
+            "title": 'Loja Parceira',
+            "lat": -23.612260,
+            "lng": -46.571500,
+            "description": 'Loja Parceira'
+            }
+        ];
+
+
+        for (var i = 0; i < markers.length; i++) {
+            var marker = markers[i];
+
+            var marker = new google.maps.Marker({
+                position: {lat: marker.lat, lng: marker.lng},
+                map: map,
+                title: marker.title
+            });
+
+            var contentString = `
+                <div class='info-window'>
+                    <h2>Locker 1</h2>
+
+                    <p>Você poderá retirar nesse locker em 3 horas</p>
+
+                    <p class='select-store'> Quero retirar aqui </p>
+            `;
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                marker.addListener('click', function(ev) {
+                    infowindow.open(map, marker);
+                });
+        }
+      }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBC5yOb5tA-U64wHKS-Vq5pGgxKrgFf6g&callback=initMap&language=pt-BR&region=BR"
+    async defer>
+    </script>
+  </body>
 </html>

@@ -22,6 +22,10 @@ routes.get('/cart',(req, res) => {
     res.sendFile(path.resolve(__dirname, '..', '..', 'views', 'cart' , 'index.html'));
 });
 
+routes.get('/checkout',(req, res) => {
+    res.sendFile(path.resolve(__dirname, '..', '..', 'views', 'checkout' , 'index.html'));
+});
+
 routes.get('/dist/assets/css/hacka-geral.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-geral.css'));
 })
