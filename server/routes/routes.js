@@ -22,6 +22,9 @@ routes.get('/dist/assets/css/hacka-geral.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-geral.css'));
 })
 
+routes.get('/dist/assets/css/hacka-fontawesome.css', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-fontawesome.css'));
+})
 
 routes.get('/dist/assets/css/hacka-home.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..' , '..', 'dist' ,'assets' ,'css' ,'hacka-home.css'));

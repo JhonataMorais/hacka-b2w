@@ -1,0 +1,96 @@
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: -webkit-fit-content;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    justify-content: center;
+    align-items: center;
+}
+.modal.active{
+    display: flex;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-title {
+    padding: 18px;
+    background-color: green;
+    color: #eee;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .modal-body {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+
+    a{
+        width: 100%;
+        background-color: red;
+        color: #fff;
+        padding: 7.5px;
+        border-radius: 5px;
+        margin: 5px 0;
+        display: block;
+        &.closeModal{
+            background-color: green
+        }
+    }
+}
+  
+  .modal-body span, .modal-body input {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.choose-title {
+    font-weight: bold;
+  }
+
+
+
