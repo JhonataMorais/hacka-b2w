@@ -41,7 +41,6 @@ routes.get('/dist/assets/js/hacka-geral.js', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','js', 'hacka-geral.js'));
 })
 
-
 routes.get('/dist/assets/css/hacka-home.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..' , '..', 'dist' ,'assets' ,'css' ,'hacka-home.css'));
 })

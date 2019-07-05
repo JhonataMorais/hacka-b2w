@@ -71,6 +71,12 @@ header .container {
         }
     }
     .header-account {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 20px;
+        }
         a {
             color: #fff;
         }
