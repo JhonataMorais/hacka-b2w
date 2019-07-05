@@ -4,7 +4,6 @@ import Actions from './actions';
 const Methods = {
     init() {
       Actions.init();
-      Sliders.init();
     },
 };
   

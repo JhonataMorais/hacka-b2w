@@ -1,4 +1,4 @@
-import Category from './modules/category';
+import Category from './modules/search';
 
 const Methods = {
     init() {
