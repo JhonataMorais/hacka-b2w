@@ -18,6 +18,10 @@ routes.get('/product',(req, res) => {
     res.sendFile(path.resolve(__dirname, '..', '..', 'views', 'product' , 'index.html'));
 });
 
+routes.get('/cart',(req, res) => {
+    res.sendFile(path.resolve(__dirname, '..', '..', 'views', 'cart' , 'index.html'));
+});
+
 routes.get('/dist/assets/css/hacka-geral.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-geral.css'));
 })
@@ -39,7 +43,11 @@ routes.get('/dist/assets/js/hacka-geral.js', function (req, res) {
 
 
 routes.get('/dist/assets/css/hacka-home.css', function (req, res) {
-    res.sendFile(path.join(__dirname, '..' , 'dist' ,'assets' ,'css' ,'hacka-home.css'));
+    res.sendFile(path.resolve(__dirname, '..' , '..', 'dist' ,'assets' ,'css' ,'hacka-home.css'));
+})
+
+routes.get('/dist/assets/css/hacka-cart.css', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..' , '..', 'dist' ,'assets' ,'css' ,'hacka-cart.css'));
 })
 
 routes.get('/assets/img/search.svg', function (req, res) {
@@ -48,6 +56,10 @@ routes.get('/assets/img/search.svg', function (req, res) {
 
 routes.get('/dist/assets/css/hacka-product.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-product.css'));
+})
+
+routes.get('/dist/assets/js/hacka-cart.js', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','js', 'hacka-cart.js'));
 })
 
 
