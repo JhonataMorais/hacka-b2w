@@ -22,6 +22,10 @@ routes.get('/cart',(req, res) => {
     res.sendFile(path.resolve(__dirname, '..', '..', 'views', 'cart' , 'index.html'));
 });
 
+routes.get('/pedidos',(req, res) => {
+    res.sendFile(path.resolve(__dirname, '..', '..', 'views', 'pedidos' , 'index.html'));
+});
+
 routes.get('/dist/assets/css/hacka-geral.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-geral.css'));
 })
@@ -53,8 +57,24 @@ routes.get('/assets/img/search.svg', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..' , '..', 'src' ,'assets' ,'img' ,'search.svg'));
 })
 
+routes.get('/assets/img/green-circle.png', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..' , '..', 'src' ,'assets' ,'img' ,'green-circle.png'));
+})
+
+routes.get('/assets/img/red-circle.png', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..' , '..', 'src' ,'assets' ,'img' ,'red-circle.png'));
+})
+
+routes.get('/assets/img/qrcode.svg', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..' , '..', 'src' ,'assets' ,'img' ,'qrcode.svg'));
+})
+
 routes.get('/dist/assets/css/hacka-product.css', function (req, res) {
     res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-product.css'));
+})
+
+routes.get('/dist/assets/css/hacka-pedidos.css', function (req, res) {
+    res.sendFile(path.resolve(__dirname, '..', '..', 'dist','assets','css', 'hacka-pedidos.css'));
 })
 
 routes.get('/dist/assets/js/hacka-cart.js', function (req, res) {
