@@ -1,4 +1,3 @@
-import Sliders from './sliders';
 import Actions from './actions';
 
 const Methods = {

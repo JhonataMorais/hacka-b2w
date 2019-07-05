@@ -1,0 +1,180 @@
+.product{
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+}
+
+.basket-productTitle{
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    margin-bottom: .5rem;
+    text-transform: none;
+}
+
+.basket-productTitle__wrapper{
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 8px;
+    margin-bottom: .7rem;
+}
+
+.basket-productInfo__wrapper{
+    flex-grow: 1;
+    width: calc(100% - 70px - 1rem);
+    flex-wrap: wrap;
+}
+
+.basket-product{
+    display: flex;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.basket-items{
+    background: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.basket-productSellerName{
+    font-size: 13px;
+    line-height: 14px;
+    color: #999;
+    text-transform: lowercase;
+}
+
+.basket-productQuantity__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.basket-productFreightTime__wrapper{
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.basket-productPrice__wrapper{
+    box-sizing: border-box;
+}
+
+.basket-productRemoveAct{
+    margin-top: 15px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.basket-productServices{
+    box-sizing: border-box;
+}
+
+.basket__wrapper{
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    flex-direction: column;
+    margin: 0 -5px;
+}
+
+.basket-productsAndFreight__wrapper{
+    flex-direction: column-reverse;
+    min-height: 100px;
+    position: relative;
+    display: flex;
+    margin-right: 0;
+}
+
+.basket-products{
+    box-sizing: border-box;
+}
+
+.basket-content{
+    transition: max-height .2s ease-in-out;
+    overflow-y: hidden;
+    max-height: 10000px;
+}
+
+.select__quantity{
+    transition: background-color .2s linear,opacity .2s linear;
+}
+
+.basket-productPrice {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: .25rem;
+}
+
+.basket-summaryAndComboVip__wrapper {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.basket-summary {
+    background: #f8f8f8;
+    padding: 1px 1.6rem 2.6rem;
+    margin: 0 -1.6rem;
+    transition: opacity .3s ease;
+}
+
+.summary-title {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.summary-details {
+    padding-left: 0;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 1rem;
+}
+
+.summary-total__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.summary-buyBtn.summary-buyBtn {
+    margin-top: 26px;
+    font-size: 16px;
+}
+
+.summary-understandTheRules {
+    color: #666;
+    line-height: 1.5;
+    margin: 13px 0;
+        margin-bottom: 13px;
+    text-align: center;
+}
+
+.summary-total {
+    text-transform: none;
+}
+
+.summary-total__wrapper > .summary-totalInstallments {
+    padding-bottom: .75rem;
+    text-align: right;
+    font-size: 14px;
+    width: 100%;
+}
+
+.summary-preview {
+    width: 100%;
+    font-size: 12px;
+    color: #417505;
+    text-align: right;
+    margin-top: 3px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.summary-buyBtn{
+    margin-top: 26px;
+    font-size: 16px;
+}
