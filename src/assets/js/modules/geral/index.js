@@ -1,9 +1,10 @@
 import Search from './search';
+import Qrcode from './qrcode';
 
 const Methods = {
   init() {
-    console.log(Search)
-    Search.init();    
+    Search.init(); 
+    Qrcode.init();   
   }
 };
 

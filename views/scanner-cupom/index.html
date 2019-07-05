@@ -75,16 +75,7 @@
         
         let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
         scanner.addListener('scan', function (content) {
-            if ( localStorage.getItem('productsCart') ) {
-                let items = JSON.parse(localStorage.getItem('productsCart'));
-                items.push(27154626);
-
-                localStorage.setItem('productsCart', JSON.stringify(items));
-            } else {
-                localStorage.setItem('productsCart', JSON.stringify([27154626]));
-            } 
-            popUp.classList.add("active");
-            //alert(content);
+            window.location = '/cupom';
 
         });
         closePopUp.addEventListener("click", function(e){

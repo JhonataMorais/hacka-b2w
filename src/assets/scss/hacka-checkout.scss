@@ -1,0 +1,76 @@
+.options {
+    margin: 30px 0;
+
+    .title {
+        background-color: #e6e6e6;
+        border-radius: 5px;
+
+        a {
+            display: block;
+            padding: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #e80011;
+        }        
+    }
+
+    .home {
+        margin-top: 20px;
+        padding: 5px 20px;
+        background-color: #eee;
+    }
+}
+
+.payment {
+    .title {
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        display: block;
+        padding: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #e80011;      
+    }
+
+    .tab ul li {
+        margin: 10px 0;
+        padding: 5px 20px;
+        background-color: #e6e6e6;
+        background-position: 95% center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+
+        &:first-child {
+            background-image: url('/assets/img/logo-ame.png');
+        }
+        &:nth-child(2) {
+            background-image: url('/assets/img/cartao.png');
+        }
+        &:nth-child(3) {
+            background-image: url('/assets/img/boleto.png');
+        }
+    }
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.buy-cart {
+    display: block;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
