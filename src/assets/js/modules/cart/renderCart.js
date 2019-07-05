@@ -33,7 +33,7 @@ const Methods = {
                                     </td>
                                     <td class='item-right'>
                                         <p>
-                                            R$ ${infoProduct.installment.result.total || '650,00'} 
+                                            R$ ${infoProduct.installment.result.total || '0,99'} 
                                         </p>
                                     </td>
                                 </tr>
